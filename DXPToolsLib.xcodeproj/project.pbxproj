@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16CE0A7C2C286F8B009C9114 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CE0A7B2C286F8B009C9114 /* AppDelegate.m */; };
+		16CE0A822C286F8B009C9114 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CE0A812C286F8B009C9114 /* ViewController.m */; };
+		16CE0A852C286F8B009C9114 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 16CE0A842C286F8B009C9114 /* Base */; };
+		16CE0A872C286F8C009C9114 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16CE0A862C286F8C009C9114 /* Assets.xcassets */; };
+		16CE0A8D2C286F8C009C9114 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CE0A8C2C286F8C009C9114 /* main.m */; };
+		16CE0A972C286F8C009C9114 /* DXPToolsLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CE0A962C286F8C009C9114 /* DXPToolsLibTests.m */; };
+		16CE0AA12C286F8C009C9114 /* DXPToolsLibUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CE0AA02C286F8C009C9114 /* DXPToolsLibUITests.m */; };
+		16CE0AA32C286F8C009C9114 /* DXPToolsLibUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CE0AA22C286F8C009C9114 /* DXPToolsLibUITestsLaunchTests.m */; };
+		16CE0ABE2C287018009C9114 /* HJLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CE0AB02C287018009C9114 /* HJLoadingView.m */; };
+		16CE0ABF2C287018009C9114 /* HJMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CE0AB22C287018009C9114 /* HJMBProgressHUD.m */; };
+		16CE0AC02C287018009C9114 /* HJMBProgressHUD+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CE0AB42C287018009C9114 /* HJMBProgressHUD+Category.m */; };
+		16CE0AC12C287018009C9114 /* SNAlertMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CE0AB62C287018009C9114 /* SNAlertMessage.m */; };
+		16CE0AC22C287018009C9114 /* HJSecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CE0ABA2C287018009C9114 /* HJSecurityUtil.m */; };
+		16CE0AC32C287018009C9114 /* HJTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CE0ABC2C287018009C9114 /* HJTool.m */; };
+		27BAB21276A0B86BC1763C3F /* libPods-DXPToolsLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD6EEAB7C008842E292A90E /* libPods-DXPToolsLib.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16CE0A932C286F8C009C9114 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16CE0A6F2C286F8B009C9114 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16CE0A762C286F8B009C9114;
+			remoteInfo = DXPToolsLib;
+		};
+		16CE0A9D2C286F8C009C9114 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16CE0A6F2C286F8B009C9114 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16CE0A762C286F8B009C9114;
+			remoteInfo = DXPToolsLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16CE0A772C286F8B009C9114 /* DXPToolsLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DXPToolsLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16CE0A7A2C286F8B009C9114 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		16CE0A7B2C286F8B009C9114 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		16CE0A802C286F8B009C9114 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		16CE0A812C286F8B009C9114 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		16CE0A842C286F8B009C9114 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16CE0A862C286F8C009C9114 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16CE0A8B2C286F8C009C9114 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16CE0A8C2C286F8C009C9114 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		16CE0A922C286F8C009C9114 /* DXPToolsLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DXPToolsLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16CE0A962C286F8C009C9114 /* DXPToolsLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXPToolsLibTests.m; sourceTree = "<group>"; };
+		16CE0A9C2C286F8C009C9114 /* DXPToolsLibUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DXPToolsLibUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16CE0AA02C286F8C009C9114 /* DXPToolsLibUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXPToolsLibUITests.m; sourceTree = "<group>"; };
+		16CE0AA22C286F8C009C9114 /* DXPToolsLibUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXPToolsLibUITestsLaunchTests.m; sourceTree = "<group>"; };
+		16CE0AAF2C287018009C9114 /* HJLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJLoadingView.h; sourceTree = "<group>"; };
+		16CE0AB02C287018009C9114 /* HJLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJLoadingView.m; sourceTree = "<group>"; };
+		16CE0AB12C287018009C9114 /* HJMBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJMBProgressHUD.h; sourceTree = "<group>"; };
+		16CE0AB22C287018009C9114 /* HJMBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJMBProgressHUD.m; sourceTree = "<group>"; };
+		16CE0AB32C287018009C9114 /* HJMBProgressHUD+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HJMBProgressHUD+Category.h"; sourceTree = "<group>"; };
+		16CE0AB42C287018009C9114 /* HJMBProgressHUD+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HJMBProgressHUD+Category.m"; sourceTree = "<group>"; };
+		16CE0AB52C287018009C9114 /* SNAlertMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNAlertMessage.h; sourceTree = "<group>"; };
+		16CE0AB62C287018009C9114 /* SNAlertMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNAlertMessage.m; sourceTree = "<group>"; };
+		16CE0AB82C287018009C9114 /* DXPHJToolsHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXPHJToolsHeader.h; sourceTree = "<group>"; };
+		16CE0AB92C287018009C9114 /* HJSecurityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJSecurityUtil.h; sourceTree = "<group>"; };
+		16CE0ABA2C287018009C9114 /* HJSecurityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJSecurityUtil.m; sourceTree = "<group>"; };
+		16CE0ABB2C287018009C9114 /* HJTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJTool.h; sourceTree = "<group>"; };
+		16CE0ABC2C287018009C9114 /* HJTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJTool.m; sourceTree = "<group>"; };
+		174F867BA97DAFAC9230AED3 /* Pods-DXPToolsLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXPToolsLib.release.xcconfig"; path = "Target Support Files/Pods-DXPToolsLib/Pods-DXPToolsLib.release.xcconfig"; sourceTree = "<group>"; };
+		2525F779AEC53CAB44C38B27 /* Pods-DXPToolsLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXPToolsLib.debug.xcconfig"; path = "Target Support Files/Pods-DXPToolsLib/Pods-DXPToolsLib.debug.xcconfig"; sourceTree = "<group>"; };
+		8CD6EEAB7C008842E292A90E /* libPods-DXPToolsLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DXPToolsLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16CE0A742C286F8B009C9114 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27BAB21276A0B86BC1763C3F /* libPods-DXPToolsLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16CE0A8F2C286F8C009C9114 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16CE0A992C286F8C009C9114 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16CE0A6E2C286F8B009C9114 = {
+			isa = PBXGroup;
+			children = (
+				16CE0A792C286F8B009C9114 /* DXPToolsLib */,
+				16CE0A952C286F8C009C9114 /* DXPToolsLibTests */,
+				16CE0A9F2C286F8C009C9114 /* DXPToolsLibUITests */,
+				16CE0A782C286F8B009C9114 /* Products */,
+				ABDBEA428D3AEEDE0DECCBE1 /* Pods */,
+				2B0FD13C2F5602713DCD2EDA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		16CE0A782C286F8B009C9114 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16CE0A772C286F8B009C9114 /* DXPToolsLib.app */,
+				16CE0A922C286F8C009C9114 /* DXPToolsLibTests.xctest */,
+				16CE0A9C2C286F8C009C9114 /* DXPToolsLibUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16CE0A792C286F8B009C9114 /* DXPToolsLib */ = {
+			isa = PBXGroup;
+			children = (
+				16CE0AB72C287018009C9114 /* DCMBProgressHUDLib */,
+				16CE0ABD2C287018009C9114 /* Tools */,
+				16CE0A7A2C286F8B009C9114 /* AppDelegate.h */,
+				16CE0A7B2C286F8B009C9114 /* AppDelegate.m */,
+				16CE0A802C286F8B009C9114 /* ViewController.h */,
+				16CE0A812C286F8B009C9114 /* ViewController.m */,
+				16CE0A832C286F8B009C9114 /* Main.storyboard */,
+				16CE0A862C286F8C009C9114 /* Assets.xcassets */,
+				16CE0A8B2C286F8C009C9114 /* Info.plist */,
+				16CE0A8C2C286F8C009C9114 /* main.m */,
+			);
+			path = DXPToolsLib;
+			sourceTree = "<group>";
+		};
+		16CE0A952C286F8C009C9114 /* DXPToolsLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				16CE0A962C286F8C009C9114 /* DXPToolsLibTests.m */,
+			);
+			path = DXPToolsLibTests;
+			sourceTree = "<group>";
+		};
+		16CE0A9F2C286F8C009C9114 /* DXPToolsLibUITests */ = {
+			isa = PBXGroup;
+			children = (
+				16CE0AA02C286F8C009C9114 /* DXPToolsLibUITests.m */,
+				16CE0AA22C286F8C009C9114 /* DXPToolsLibUITestsLaunchTests.m */,
+			);
+			path = DXPToolsLibUITests;
+			sourceTree = "<group>";
+		};
+		16CE0AB72C287018009C9114 /* DCMBProgressHUDLib */ = {
+			isa = PBXGroup;
+			children = (
+				16CE0AAF2C287018009C9114 /* HJLoadingView.h */,
+				16CE0AB02C287018009C9114 /* HJLoadingView.m */,
+				16CE0AB12C287018009C9114 /* HJMBProgressHUD.h */,
+				16CE0AB22C287018009C9114 /* HJMBProgressHUD.m */,
+				16CE0AB32C287018009C9114 /* HJMBProgressHUD+Category.h */,
+				16CE0AB42C287018009C9114 /* HJMBProgressHUD+Category.m */,
+				16CE0AB52C287018009C9114 /* SNAlertMessage.h */,
+				16CE0AB62C287018009C9114 /* SNAlertMessage.m */,
+			);
+			path = DCMBProgressHUDLib;
+			sourceTree = "<group>";
+		};
+		16CE0ABD2C287018009C9114 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				16CE0AB82C287018009C9114 /* DXPHJToolsHeader.h */,
+				16CE0AB92C287018009C9114 /* HJSecurityUtil.h */,
+				16CE0ABA2C287018009C9114 /* HJSecurityUtil.m */,
+				16CE0ABB2C287018009C9114 /* HJTool.h */,
+				16CE0ABC2C287018009C9114 /* HJTool.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		2B0FD13C2F5602713DCD2EDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CD6EEAB7C008842E292A90E /* libPods-DXPToolsLib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABDBEA428D3AEEDE0DECCBE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2525F779AEC53CAB44C38B27 /* Pods-DXPToolsLib.debug.xcconfig */,
+				174F867BA97DAFAC9230AED3 /* Pods-DXPToolsLib.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16CE0A762C286F8B009C9114 /* DXPToolsLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16CE0AA62C286F8C009C9114 /* Build configuration list for PBXNativeTarget "DXPToolsLib" */;
+			buildPhases = (
+				1AFD661357022270DC506AC6 /* [CP] Check Pods Manifest.lock */,
+				16CE0A732C286F8B009C9114 /* Sources */,
+				16CE0A742C286F8B009C9114 /* Frameworks */,
+				16CE0A752C286F8B009C9114 /* Resources */,
+				142C0B6A55AC9BAE28AE0A01 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DXPToolsLib;
+			productName = DXPToolsLib;
+			productReference = 16CE0A772C286F8B009C9114 /* DXPToolsLib.app */;
+			productType = "com.apple.product-type.application";
+		};
+		16CE0A912C286F8C009C9114 /* DXPToolsLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16CE0AA92C286F8C009C9114 /* Build configuration list for PBXNativeTarget "DXPToolsLibTests" */;
+			buildPhases = (
+				16CE0A8E2C286F8C009C9114 /* Sources */,
+				16CE0A8F2C286F8C009C9114 /* Frameworks */,
+				16CE0A902C286F8C009C9114 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16CE0A942C286F8C009C9114 /* PBXTargetDependency */,
+			);
+			name = DXPToolsLibTests;
+			productName = DXPToolsLibTests;
+			productReference = 16CE0A922C286F8C009C9114 /* DXPToolsLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		16CE0A9B2C286F8C009C9114 /* DXPToolsLibUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16CE0AAC2C286F8C009C9114 /* Build configuration list for PBXNativeTarget "DXPToolsLibUITests" */;
+			buildPhases = (
+				16CE0A982C286F8C009C9114 /* Sources */,
+				16CE0A992C286F8C009C9114 /* Frameworks */,
+				16CE0A9A2C286F8C009C9114 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16CE0A9E2C286F8C009C9114 /* PBXTargetDependency */,
+			);
+			name = DXPToolsLibUITests;
+			productName = DXPToolsLibUITests;
+			productReference = 16CE0A9C2C286F8C009C9114 /* DXPToolsLibUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16CE0A6F2C286F8B009C9114 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					16CE0A762C286F8B009C9114 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					16CE0A912C286F8C009C9114 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 16CE0A762C286F8B009C9114;
+					};
+					16CE0A9B2C286F8C009C9114 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 16CE0A762C286F8B009C9114;
+					};
+				};
+			};
+			buildConfigurationList = 16CE0A722C286F8B009C9114 /* Build configuration list for PBXProject "DXPToolsLib" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16CE0A6E2C286F8B009C9114;
+			productRefGroup = 16CE0A782C286F8B009C9114 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16CE0A762C286F8B009C9114 /* DXPToolsLib */,
+				16CE0A912C286F8C009C9114 /* DXPToolsLibTests */,
+				16CE0A9B2C286F8C009C9114 /* DXPToolsLibUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16CE0A752C286F8B009C9114 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16CE0A872C286F8C009C9114 /* Assets.xcassets in Resources */,
+				16CE0A852C286F8B009C9114 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16CE0A902C286F8C009C9114 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16CE0A9A2C286F8C009C9114 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		142C0B6A55AC9BAE28AE0A01 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DXPToolsLib/Pods-DXPToolsLib-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1AFD661357022270DC506AC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DXPToolsLib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16CE0A732C286F8B009C9114 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16CE0AC12C287018009C9114 /* SNAlertMessage.m in Sources */,
+				16CE0A822C286F8B009C9114 /* ViewController.m in Sources */,
+				16CE0AC02C287018009C9114 /* HJMBProgressHUD+Category.m in Sources */,
+				16CE0AC22C287018009C9114 /* HJSecurityUtil.m in Sources */,
+				16CE0ABE2C287018009C9114 /* HJLoadingView.m in Sources */,
+				16CE0ABF2C287018009C9114 /* HJMBProgressHUD.m in Sources */,
+				16CE0A7C2C286F8B009C9114 /* AppDelegate.m in Sources */,
+				16CE0A8D2C286F8C009C9114 /* main.m in Sources */,
+				16CE0AC32C287018009C9114 /* HJTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16CE0A8E2C286F8C009C9114 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16CE0A972C286F8C009C9114 /* DXPToolsLibTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16CE0A982C286F8C009C9114 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16CE0AA12C286F8C009C9114 /* DXPToolsLibUITests.m in Sources */,
+				16CE0AA32C286F8C009C9114 /* DXPToolsLibUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16CE0A942C286F8C009C9114 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16CE0A762C286F8B009C9114 /* DXPToolsLib */;
+			targetProxy = 16CE0A932C286F8C009C9114 /* PBXContainerItemProxy */;
+		};
+		16CE0A9E2C286F8C009C9114 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16CE0A762C286F8B009C9114 /* DXPToolsLib */;
+			targetProxy = 16CE0A9D2C286F8C009C9114 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		16CE0A832C286F8B009C9114 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16CE0A842C286F8B009C9114 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16CE0AA42C286F8C009C9114 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		16CE0AA52C286F8C009C9114 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16CE0AA72C286F8C009C9114 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2525F779AEC53CAB44C38B27 /* Pods-DXPToolsLib.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J69T2LPPSN;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXCLUDED_ARCHS = arm64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DXPToolsLib/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-ld64",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.superman.DXPToolsLib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		16CE0AA82C286F8C009C9114 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 174F867BA97DAFAC9230AED3 /* Pods-DXPToolsLib.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J69T2LPPSN;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXCLUDED_ARCHS = arm64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DXPToolsLib/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-ld64",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.superman.DXPToolsLib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		16CE0AAA2C286F8C009C9114 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J69T2LPPSN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.superman.DXPToolsLibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DXPToolsLib.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DXPToolsLib";
+			};
+			name = Debug;
+		};
+		16CE0AAB2C286F8C009C9114 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J69T2LPPSN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.superman.DXPToolsLibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DXPToolsLib.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DXPToolsLib";
+			};
+			name = Release;
+		};
+		16CE0AAD2C286F8C009C9114 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J69T2LPPSN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.superman.DXPToolsLibUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DXPToolsLib;
+			};
+			name = Debug;
+		};
+		16CE0AAE2C286F8C009C9114 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J69T2LPPSN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.superman.DXPToolsLibUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DXPToolsLib;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16CE0A722C286F8B009C9114 /* Build configuration list for PBXProject "DXPToolsLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16CE0AA42C286F8C009C9114 /* Debug */,
+				16CE0AA52C286F8C009C9114 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16CE0AA62C286F8C009C9114 /* Build configuration list for PBXNativeTarget "DXPToolsLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16CE0AA72C286F8C009C9114 /* Debug */,
+				16CE0AA82C286F8C009C9114 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16CE0AA92C286F8C009C9114 /* Build configuration list for PBXNativeTarget "DXPToolsLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16CE0AAA2C286F8C009C9114 /* Debug */,
+				16CE0AAB2C286F8C009C9114 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16CE0AAC2C286F8C009C9114 /* Build configuration list for PBXNativeTarget "DXPToolsLibUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16CE0AAD2C286F8C009C9114 /* Debug */,
+				16CE0AAE2C286F8C009C9114 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16CE0A6F2C286F8B009C9114 /* Project object */;
+}
