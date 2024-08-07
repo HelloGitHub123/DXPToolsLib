@@ -1241,7 +1241,7 @@
 	NSString *shareContent = isEmptyString_tools([parmasDic objectForKey:@"shareContent"])?@"":[parmasDic objectForKey:@"shareContent"];
 	
 	NSArray *activityItems = @[];
-	if(!isEmptyString(shareContent)) {
+	if(!isEmptyString_tools(shareContent)) {
 		activityItems = @[shareContent];
 	}
 	
