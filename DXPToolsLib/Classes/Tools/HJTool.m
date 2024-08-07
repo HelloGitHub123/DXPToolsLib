@@ -1232,4 +1232,34 @@
 	return KFileType_none;
 }
 
+#pragma mark -- 调用原生分享功能进行第三方社媒分享
++ (void)shareBySystem:(NSDictionary *)parmasDic fromVc:(UIViewController *)fromVC block:(void (^)(BOOL isSuccess))block {
+	if ([parmasDic allKeys] == 0) {
+		return;
+	}
+	// 内容
+	NSString *shareContent = isEmptyString_tools([parmasDic objectForKey:@"shareContent"])?@"":[parmasDic objectForKey:@"shareContent"];
+	
+	NSArray *activityItems = @[];
+	if(!isEmptyString(shareContent)) {
+		activityItems = @[shareContent];
+	}
+	
+	UIActivityViewController *activityVC = [[UIActivityViewController alloc]initWithActivityItems:activityItems applicationActivities:nil];
+	activityVC.excludedActivityTypes = @[UIActivityTypePrint, UIActivityTypeCopyToPasteboard,UIActivityTypeAssignToContact,UIActivityTypeSaveToCameraRoll];
+	[fromVC.navigationController presentViewController:activityVC animated:YES completion:nil];
+	//分享之后的回调
+	activityVC.completionWithItemsHandler = ^(UIActivityType  _Nullable activityType, BOOL completed, NSArray * _Nullable returnedItems, NSError * _Nullable activityError) {
+		if (completed) {
+			if(block) {
+				block(YES);
+			}
+		} else  {
+			if(block) {
+				block(NO);
+			}
+		}
+	};
+}
+
 @end

@@ -200,6 +200,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (KFileType)getFileTypeByFileName:(NSString *)fileName ;
 
+// 调用原生分享功能进行第三方社媒分享
++ (void)shareBySystem:(NSDictionary *)parmasDic fromVc:(UIViewController *)fromVC block:(void (^)(BOOL isSuccess))block;
+
 @end
 
 NS_ASSUME_NONNULL_END
