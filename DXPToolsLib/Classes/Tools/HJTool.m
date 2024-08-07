@@ -1234,11 +1234,12 @@
 
 #pragma mark -- 调用原生分享功能进行第三方社媒分享
 + (void)shareBySystem:(NSDictionary *)parmasDic fromVc:(UIViewController *)fromVC block:(void (^)(BOOL isSuccess))block {
-	if ([parmasDic allKeys] == 0) {
-		return;
-	}
 	// 内容
 	NSString *shareContent = isEmptyString_tools([parmasDic objectForKey:@"shareContent"])?@"":[parmasDic objectForKey:@"shareContent"];
+	
+	if ([parmasDic allKeys] == 0 || isEmptyString_tools(shareContent)) {
+		return;
+	}
 	
 	NSArray *activityItems = @[];
 	if(!isEmptyString_tools(shareContent)) {
