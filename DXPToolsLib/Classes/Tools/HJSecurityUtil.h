@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSString *)encrypt:(NSString *)content;
 
++ (NSString *)decrypt:(NSString *)content withKey:(NSString*)key;
+
 @end
 
 NS_ASSUME_NONNULL_END
