@@ -121,7 +121,7 @@ NSData *convertHexStrToData(NSString *str) {
 		NSData *data = [[NSData alloc]initWithBase64EncodedString:content options:NSDataBase64DecodingIgnoreUnknownCharacters];
 		NSData *ivData =  [data subdataWithRange:NSMakeRange(0, 16)];
 		NSData *contentData =  [data subdataWithRange:NSMakeRange(16, data.length-16)];
-		NSString *decryptStr = [[NSString alloc]initWithData:[self decryptAESWithData:contentData key:key ivData:ivData] encoding:NSUTF8StringEncoding];
+		NSString *decryptStr = [[NSString alloc]initWithData:[self decryptAESWithData:contentData key:key iv:ivData] encoding:NSUTF8StringEncoding];
 		return decryptStr;
 	} @catch (NSException *exception) {
 	   
