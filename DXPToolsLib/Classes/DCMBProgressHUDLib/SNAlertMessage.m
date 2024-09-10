@@ -146,7 +146,7 @@
 
 + (void)hideLoading {
     NSString *appName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
-    if ([appName isEqualToString:@"POST"]) {
+    if ([appName isEqualToString:@"POST"] || [appName isEqualToString:@"ETA"]) {
         [HJMBProgressHUD hideHUDForView:[SNAlertMessage sharedInstance].snView animated:YES];
     } else {
         [[SNAlertMessage sharedInstance].hud hideAnimated:YES];
