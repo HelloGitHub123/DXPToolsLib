@@ -741,7 +741,12 @@
 	if ([deviceString isEqualToString:@"iPhone15,5"])   return @"iPhone 15 Plus";
 	if ([deviceString isEqualToString:@"iPhone16,1"])   return @"iPhone 15 Pro";
 	if ([deviceString isEqualToString:@"iPhone16,2"])   return @"iPhone 15 Pro Max";
-
+	if ([deviceString isEqualToString:@"iPhone16,3"])   return @"iPhone 16 Pro Max";
+	if ([deviceString isEqualToString:@"iPhone16,4"])   return @"iPhone 16";
+	if ([deviceString isEqualToString:@"iPhone16,5"])   return @"iPhone 16 Plus";
+	if ([deviceString isEqualToString:@"iPhone17,1"])   return @"iPhone 17 Pro";
+	if ([deviceString isEqualToString:@"iPhone17,2"])   return @"iPhone 17 Pro Max";
+	
 	return deviceString;
 }
 
