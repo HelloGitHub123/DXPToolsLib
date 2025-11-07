@@ -15,7 +15,7 @@
 + (instancetype)showLoading {
     
     NSString *appName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
-    if ([appName isEqualToString:@"POST"] || [appName isEqualToString:@"ETA"] || [appName isEqualToString:@"ELH"]) {
+    if ([appName isEqualToString:@"POST"] || [appName isEqualToString:@"ETA"] || [appName isEqualToString:@"ELH"] || [appName isEqualToString:@"NetOne"]) {
         // TM
         NSString *path = [[NSBundle mainBundle] pathForResource:@"CLP_Loading" ofType:@"gif"];
         NSData *gifData = [NSData dataWithContentsOfFile:path];
