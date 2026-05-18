@@ -92,7 +92,7 @@
 - (void)hideAlertMessage {
     [self.hud hideAnimated:YES];
     _isShowMessage=NO;
-    [self performSelector:@selector(showAlertMessage) withObject:nil afterDelay:0.2f];
+//    [self performSelector:@selector(showAlertMessage) withObject:nil afterDelay:0.2f];
 }
 
 //加载效果
